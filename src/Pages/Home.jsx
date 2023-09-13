@@ -3,6 +3,7 @@ import LeftNav from '../Components/LeftNav'
 import Login from '../Components/Login'
 import Signup from '../Components/Signup'
 import Courses from './Courses'
+import AddCourse from '../Components/AddCourse'
 
 
 const Home = () => {
@@ -12,6 +13,7 @@ const Home = () => {
        {/* <Login/> */}
        {/* <Signup/> */}
        <Courses/>
+       {/* <AddCourse/> */}
     </>
   )
 }

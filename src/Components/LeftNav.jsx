@@ -7,7 +7,7 @@ import logout from '../Assets/logout.png'
 
 const LeftNav = () => {
   return (
-    <Flex direction={'column'} w={'8%'} p={'10px'}  border={'2px solid red'}>
+    <Flex direction={'column'} w={'8%'} p={'10px'} >
      <Flex   ><Image src={logo1}></Image></Flex >
   
 

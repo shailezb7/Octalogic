@@ -10,5 +10,25 @@
       "password": "b@123",
       "id": 2
     }
+  ],
+  "courses": [
+    {
+      "id": 1,
+      "course": "a",
+      "day": "Sunday",
+      "description": "b",
+      "instructor": "c",
+      "instrument": "Flute",
+      "price": "12"
+    },
+    {
+      "course": "akash",
+      "description": "web developer",
+      "instructor": "naruto",
+      "instrument": "Flute",
+      "day": "Sunday",
+      "price": "100",
+      "id": 2
+    }
   ]
 }
