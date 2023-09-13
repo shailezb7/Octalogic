@@ -1,8 +1,8 @@
-import { Button, Container, FormControl, FormLabel, Input } from '@chakra-ui/react'
+import { Button, Container, Flex, FormControl, FormLabel, Input, Text } from '@chakra-ui/react'
 import axios from 'axios';
 import React, { useContext, useEffect, useState } from 'react'
 import { AuthContext } from '../Context/AuthContext';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Login = () => {
     let [email,setEmail]=useState("");
@@ -13,7 +13,7 @@ const Login = () => {
 
      let handleLogin=async ()=>{
         // console.log(email,password);
-        let resp=await axios.get('http://localhost:8080/users');
+        let resp=await axios.get('https://octa-srvr.onrender.com/users');
         // console.log(data.data);
         let data=resp.data;
         data?.map((e)=>{
@@ -37,7 +37,10 @@ const Login = () => {
                 <FormLabel color={'pink'}>Password</FormLabel>
                 <Input type='password' onChange={(e)=>setPassword(e.target.value)}/><br /><br />
 
-                <Button colorScheme={'pink'} onClick={handleLogin}>Submit</Button>
+               <Flex justifyContent={"space-between"} padding={"0 10px"}>
+               <Button colorScheme={'pink'} onClick={handleLogin}>Submit</Button>
+               <Text> New user? <Link to={"/signup"} style={{color:"blue",textDecoration:"underline"}}>Signup</Link></Text>
+               </Flex>
             </FormControl>
         </Container>
     )

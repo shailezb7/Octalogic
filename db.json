@@ -13,22 +13,54 @@
   ],
   "courses": [
     {
-      "id": 1,
       "course": "a",
-      "day": "Sunday",
-      "description": "b",
-      "instructor": "c",
+      "description": "a",
+      "instructor": "a",
       "instrument": "Flute",
-      "price": "12"
+      "day": "Friday",
+      "price": "1111",
+      "status": "close",
+      "id": 3
     },
     {
-      "course": "akash",
-      "description": "web developer",
-      "instructor": "naruto",
+      "course": "shailesh",
+      "description": "desc",
+      "instructor": "akash",
       "instrument": "Flute",
+      "day": "Friday",
+      "price": "1111",
+      "status": "open",
+      "id": 4
+    },
+    {
+      "course": "narayan",
+      "description": "ambitious",
+      "instructor": "shailesh",
+      "instrument": "Flute",
+      "day": "Monday",
+      "price": "1000",
+      "status": "open",
+      "id": 5
+    },
+    {
+      "course": "ashish",
+      "description": "aspiring musician",
+      "instructor": "mitraz",
+      "instrument": "Guitar",
       "day": "Sunday",
-      "price": "100",
-      "id": 2
+      "price": "2000",
+      "status": "open",
+      "id": 6
+    },
+    {
+      "course": "sivan",
+      "description": "college student",
+      "instructor": "a r rehman",
+      "instrument": "Flute",
+      "day": "Tuesday",
+      "price": "123",
+      "status": "open",
+      "id": 7
     }
   ]
 }
